@@ -4,14 +4,22 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @Controller
-@RequestMapping("/home")
+@RequestMapping("/")
 public class HomeController {
-    @GetMapping
+    @GetMapping("/home")
     public String HomePage() {
         return "pages/home";
     }
+
+    @GetMapping("/catalog")
+    public String CatalogPage() {
+        return "pages/catalog";
+    }
+    
     
 }
