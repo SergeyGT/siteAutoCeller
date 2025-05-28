@@ -1,1 +1,83 @@
 <div th:insert="~{blocks/header::header}"></div>
+
+ <!-- Герой-секция с фоновым изображением -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-3 fw-bold mb-4">СтройТехАренда</h1>
+            <p class="lead fs-3 mb-5">Профессиональная аренда строительной техники</p>
+            <a href="/about" class="btn btn-primary btn-lg px-4 me-2">Подробнее</a>
+            <a href="#" class="btn btn-outline-light btn-lg px-4">Каталог</a>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-5">О нашей компании</h2>
+                    <p class="lead mb-5">СтройТехАренда - лидер на рынке аренды строительной техники с 2010 года. 
+                    Мы предлагаем современный парк техники для любых строительных задач по доступным ценам.</p>
+                    
+                    <div class="row g-4 py-5">
+                        <div class="col-md-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <h3>Широкий выбор</h3>
+                            <p>Большой выбор техники: экскаваторы, бульдозеры, погрузчики и другое.</p>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <h3>Гибкие условия</h3>
+                            <p>Аренда от 1 дня до нескольких месяцев. Возможность продления договора.</p>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                            <h3>Техподдержка</h3>
+                            <p>Круглосуточная техническая поддержка и сервисное обслуживание.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-6 mb-4">
+                            <h4><i class="bi bi-check-circle-fill text-primary me-2"></i>Наши преимущества</h4>
+                            <ul class="text-start">
+                                <li>Новая и исправная техника</li>
+                                <li>Опытные операторы (по запросу)</li>
+                                <li>Доставка на объект</li>
+                                <li>Конкурентные цены</li>
+                                <li>Страхование оборудования</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h4><i class="bi bi-building text-primary me-2"></i>Сферы применения</h4>
+                            <ul class="text-start">
+                                <li>Гражданское строительство</li>
+                                <li>Дорожные работы</li>
+                                <li>Промышленное строительство</li>
+                                <li>Земляные работы</li>
+                                <li>Снос зданий</li>
+                                <li>Ландшафтные работы</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>
