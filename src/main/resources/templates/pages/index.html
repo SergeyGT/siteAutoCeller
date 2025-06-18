@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="ru-RU" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -205,18 +205,14 @@
                         <p>Мы перезвоним вам, ответим на вопросы</p>
                         <p>по водоснабжению, канализации и рассчитаем стоимость</p>
                         
-                        <form class="mt-4">
+                        <form class="mt-4" th:action="@{/main/mail}" th:object="${mailRequest}" method="post">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Напишите имя:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+                                <input type="text" class="form-control" id="name" th:field="*{name}" placeholder="Ваше имя">
                             </div>
                             <div class="mb-3">
                                 <label for="mail" class="form-label">Введите почту:</label>
-                                <input type="email" class="form-control" id="mail" placeholder="example@mail.ru">
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="agree" checked>
-                                <label class="form-check-label" for="agree">Я согласен на обработку <a href="/personal.pdf">Персональных данных</a></label>
+                                <input type="email" class="form-control" id="mail" th:field="*{mail}" placeholder="example@mail.ru">
                             </div>
                             <button type="submit" class="btn btn-custom w-100">получить консультацию и узнать стоимость</button>
                         </form>
