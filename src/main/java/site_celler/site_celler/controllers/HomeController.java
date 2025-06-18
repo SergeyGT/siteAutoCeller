@@ -20,6 +20,11 @@ public class HomeController {
     public String CatalogPage() {
         return "pages/catalog";
     }
+
+    @GetMapping("/main")
+    public String MainPage(){
+        return "pages/index";
+    }
     
     
 }
